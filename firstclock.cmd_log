@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/student/BlinkingLed/firstclock.syr" 
+xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/student/BlinkingLed/firstclock.syr" 
