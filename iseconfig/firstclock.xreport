@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-02T13:58:42</DateModified>
+  <DateModified>2015-10-12T18:13:11</DateModified>
   <ModuleName>firstclock</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/student/BlinkingLed/iseconfig/firstclock.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/student/BlinkingLed</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/student/BlinkingLed/</ImplementationReportsDirectory>
   <DateInitialized>2015-10-02T13:58:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

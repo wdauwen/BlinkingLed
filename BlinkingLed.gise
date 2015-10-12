@@ -22,19 +22,29 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="BlinkingLed.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="firstclock.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="firstclock.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="firstclock.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="firstclock.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="firstclock.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="firstclock.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="firstclock.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="firstclock.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="firstclock.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="firstclock.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="firstclock_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="firstclock_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="firstclock_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="firstclock_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="firstclock_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="firstclock_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="firstclock_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -67,16 +77,42 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1443468651" xil_pn:in_ck="5032470604611734729" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-6105066280470461480" xil_pn:start_ts="1443468597">
+    <transform xil_pn:end_ts="1444667029" xil_pn:in_ck="5032470604611734729" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-6105066280470461480" xil_pn:start_ts="1444666989">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="firstclock.lso"/>
+      <outfile xil_pn:name="firstclock.ngc"/>
+      <outfile xil_pn:name="firstclock.ngr"/>
+      <outfile xil_pn:name="firstclock.prj"/>
+      <outfile xil_pn:name="firstclock.stx"/>
+      <outfile xil_pn:name="firstclock.syr"/>
+      <outfile xil_pn:name="firstclock.xst"/>
+      <outfile xil_pn:name="firstclock_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1444667235" xil_pn:in_ck="-6602596345936479633" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4728683153816107028" xil_pn:start_ts="1444667235">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1444667243" xil_pn:in_ck="-7130960359637083575" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="807931150277710860" xil_pn:start_ts="1444667235">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="firstclock.bld"/>
+      <outfile xil_pn:name="firstclock.ngd"/>
+      <outfile xil_pn:name="firstclock_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1444667256" xil_pn:in_ck="-7130960359637083574" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="3373610943407121171" xil_pn:start_ts="1444667243">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="firstclock_map.map"/>
+      <outfile xil_pn:name="firstclock_map.mrp"/>
+      <outfile xil_pn:name="firstclock_map.ngm"/>
     </transform>
   </transforms>
 
