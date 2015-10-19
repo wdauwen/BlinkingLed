@@ -4,3 +4,13 @@ xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/st
 xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/student/BlinkingLed/firstclock.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BlinkingLed.ucf -p xa7a100t-csg324-2I firstclock.ngc firstclock.ngd  
 map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o firstclock_map.ncd firstclock.ngd firstclock.pcf 
+xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/student/BlinkingLed/firstclock.syr" 
+xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/student/BlinkingLed/firstclock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BlinkingLed.ucf -p xa7a100t-csg324-2I firstclock.ngc firstclock.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o firstclock_map.ncd firstclock.ngd firstclock.pcf 
+xst -intstyle ise -ifn "/home/student/BlinkingLed/firstclock.xst" -ofn "/home/student/BlinkingLed/firstclock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BlinkingLed.ucf -p xa3s700a-fgg484-4 firstclock.ngc firstclock.ngd  
+map -intstyle ise -p xa3s700a-fgg484-4 -cm area -ir off -pr off -c 100 -o firstclock_map.ncd firstclock.ngd firstclock.pcf 
+par -w -intstyle ise -ol high -t 1 firstclock_map.ncd firstclock.ncd firstclock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml firstclock.twx firstclock.ncd -o firstclock.twr firstclock.pcf -ucf BlinkingLed.ucf 
+bitgen -intstyle ise -f firstclock.ut firstclock.ncd 

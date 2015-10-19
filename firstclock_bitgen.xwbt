@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student/BlinkingLed/firstclock.ncd
+OUTFILE=/home/student/BlinkingLed/firstclock.bit
+FAMILY=Automotive Spartan3A
+PART=xa3s700a-4fgg484
+WORKINGDIR=/home/student/BlinkingLed
+LICENSE=WebPack
+USER_INFO=210935052_0_0_156

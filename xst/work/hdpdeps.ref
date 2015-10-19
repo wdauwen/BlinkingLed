@@ -1,0 +1,6 @@
+V3 3
+FL /home/student/Downloads/firstclock.vhd 2015/10/12.19:02:04 P.20131013
+EN work/firstclock 1444669594 FL /home/student/Downloads/firstclock.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/firstclock/Behavioral 1444669595 \
+      FL /home/student/Downloads/firstclock.vhd EN work/firstclock 1444669594
